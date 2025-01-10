@@ -1,0 +1,261 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* General Body and Navigation Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Bar Styling */
+nav {
+  background: linear-gradient(90deg, #1e3c72, #2a5298); /* Modern blue gradient */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 8px 15px; /* Reduced padding for a smaller nav */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  position: sticky; /* Sticks to the top when scrolling */
+  top: 0;
+  z-index: 1000;
+}
+
+nav .logo {
+  width: 40px; /* Compact logo size */
+  height: 40px;
+  border-radius: 50%; /* Circular logo */
+  margin-right: 15px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+nav .logo:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+nav h1 {
+  color: #fff;
+  font-size: 1.5rem; /* Adjusted smaller font size */
+  margin-right: auto;
+  font-family: 'Poppins', sans-serif; /* Clean modern font */
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px; /* Smaller link padding */
+  margin: 0 5px;
+  text-transform: uppercase;
+  font-weight: 500; /* Medium font weight */
+  font-size: 0.9rem; /* Reduced link font size */
+  letter-spacing: 0.8px; /* Adjusted spacing */
+  border: 2px solid transparent;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background: #f39c12; /* Bright orange hover effect */
+  color: #000; /* Dark text on hover */
+  border: 2px solid #f39c12; /* Highlighted border */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+
+
+.hero {
+ /* background-image: url('../image/bhartiy.jpg'); /* Ensure the image path is correct */
+  background-size: cover;
+  background-position: center;
+  color: #fff; /* White text for better contrast */
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+  overflow: hidden;
+  
+}
+
+/* Add a gradient overlay with transparency */
+.hero:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)); /* Gradient for transparent effect */
+  z-index: -1; /* Keeps the overlay behind the text */
+}
+
+/* Hero Heading Styling */
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Adds a slight shadow for better text visibility */
+}
+
+/* Hero Paragraph Styling */
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Matches h1 shadow */
+}
+
+/* Button Styling */
+.hero-btn {
+  background: #ff6f61; /* Soft red button for contrast */
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hero-btn:hover {
+  background: #e94e3a; /* Darker red on hover */
+  transform: scale(1.1); /* Enlarges slightly on hover */
+}
+
+  .hero p {
+      font-size: 1rem;
+  }
+
+  .hero-btn {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+  }
+
+/* General Body and Navigation Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Bar Styling */
+nav {
+  background: linear-gradient(90deg, #6d071a, #8a0e25); /* Deep maroon gradient */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 8px 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav .logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+nav .logo:hover {
+  transform: scale(1.1);
+}
+
+nav h1 {
+  color: #ffdd99; /* Golden Yellow for contrast */
+  font-size: 1.5rem;
+  margin-right: auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+nav a {
+  color: #ffdd99; /* Golden Yellow for consistency */
+  text-decoration: none;
+  padding: 5px 10px;
+  margin: 0 5px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.9rem;
+  letter-spacing: 0.8px;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background: #ffc107; /* Bright yellow hover effect */
+  color: #6d071a; /* Matches the maroon theme */
+  border: 2px solid #ffc107;
+  transform: scale(1.05);
+}
+
+/* Button Styling */
+.hero-btn {
+  background: #f39c12; /* Bright orange button */
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 50px; /* Rounded button */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hero-btn:hover {
+  background: #d35400; /* Darker orange on hover */
+  transform: scale(1.1); /* Enlarges slightly on hover */
+  color: #fff;
+}
+
+/* Footer Section */
+footer {
+  background: linear-gradient(90deg, #6d071a, #8a0e25); /* Same deep maroon gradient as navbar */
+  color: #ffdd99; /* Golden Yellow for text */
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+}
+
