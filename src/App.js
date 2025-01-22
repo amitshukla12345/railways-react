@@ -1,24 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
 import Navbar from './Components/RailwaysBookingSystem/Navbar';
-import { createBrowserRouter,RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 
 
-const routes= createBrowserRouter([
-  
- {
-  path:"/",
-  element:<Navbar/>
- }
+
+const routes = createBrowserRouter([
+  {
+    path: "/", // Default route (e.g., Home or Navbar)
+    element: <Navbar />,
+  }
+
  
+
 ]);
 
 function App() {
   return (
     <div>
-<RouterProvider router={routes}/>
-      
+      <RouterProvider router={routes} />
     </div>
   );
 }
