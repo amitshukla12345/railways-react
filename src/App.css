@@ -259,3 +259,145 @@ footer {
   font-size: 0.9rem;
 }
 
+/* register */
+
+.rg{
+  flex: 1 1 100%;
+}
+
+.registerform{
+  display: flex; flex-wrap: wrap; gap: 15px;
+}
+
+/* css register*/
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.form-container {
+  background: #088fe9;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.form-container h2 {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.form-group {
+  flex: 1 1 calc(50% - 20px);
+  margin-bottom: 10px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+.form-group input, .form-group select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.form-group input:focus, .form-group select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+.form-group button {
+  width: 100%;
+  padding: 10px;
+  background-color: #15ff00;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.form-group button:hover {
+  background-color: #b300a4;
+}
+
+/* train table Table css*/
+
+/* General styling for the table */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  text-align: left;
+  border: 2px solid #330bc4; /* Border for the whole table */
+}
+
+/* Table header styling */
+.table th {
+  background-color: #edfc19;
+  color: rgb(189, 28, 7);
+  padding: 10px;
+  text-transform: uppercase;
+  border: 2px solid #330bc4; /* Border around each header cell */
+}
+
+/* Table rows */
+.table td {
+  padding: 10px;
+  border-bottom: 2px solid #330bc4; /* Border between rows */
+  border-right: 2px solid #330bc4; /* Border between columns */
+}
+
+/* Remove the right border for the last column */
+.table td:last-child {
+  border-right: none;
+}
+
+/* Alternating row colors for better readability */
+.table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+/* Hover effect on rows */
+.table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Additional styling for table row (added .p-3 class) */
+.p-3 {
+  padding: 15px; /* Adds extra padding to the row */
+}
+
+/* Center-align the "No trains available" message */
+.table td[colspan] {
+  text-align: center;
+  font-style: italic;
+  color: #555;
+  padding: 20px;
+}
+
+/* Responsive table */
+@media screen and (max-width: 768px) {
+  .table {
+    font-size: 14px;
+  }
+  .table th,
+  .table td {
+    padding: 8px;
+  }
+}
