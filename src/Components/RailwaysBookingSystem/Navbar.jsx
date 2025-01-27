@@ -1,11 +1,12 @@
 import React from 'react';
+import logo from '../../image/rail logo1.png'
 
 const RailwayReservationSystem = () => {
     return (
         <div>
             {/* Navigation Bar */}
             <nav>
-                <img src="../image/rail logo1.png" alt="Indian Railway Logo" className="logo" />
+                <img src={logo} alt="Indian Railway Logo" className="logo" />
                 <h1>भारतीय रेल (Bharti Rail)</h1>
                 <a href="Index.html">Home</a>
                 <a href="user.html">User</a>

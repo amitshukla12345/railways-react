@@ -15,6 +15,7 @@
 
 .App-header {
   background-color: #282c34;
+  
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -101,7 +102,7 @@ nav a:hover {
 
 
 .hero {
- /* background-image: url('../image/bhartiy.jpg'); /* Ensure the image path is correct */
+ /*background-image: url('./image/bhartiy.jpg'); /* Ensure the image path is correct */
   background-size: cover;
   background-position: center;
   color: #fff; /* White text for better contrast */
@@ -181,7 +182,7 @@ nav {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 8px 15px;
+  padding: 15px 15px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   position: sticky;
   top: 0;
@@ -269,7 +270,7 @@ footer {
   display: flex; flex-wrap: wrap; gap: 15px;
 }
 
-/* css register*/
+/* css of register page*/
 
 body {
   font-family: Arial, sans-serif;
@@ -401,3 +402,171 @@ body {
     padding: 8px;
   }
 }
+
+
+/*search css*/
+
+/*Train css*/
+/* General Styles */
+body {
+    
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #2fbdff,#ff7582); /* Gradient from purple to orange */
+}
+
+
+/* Navigation Bar Styling */
+nav {
+  background: linear-gradient(90deg, #6d071a, #8a0e25); /* Deep maroon gradient */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 8px 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav .logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+nav .logo:hover {
+  transform: scale(1.1);
+}
+
+nav h1 {
+  color: #ffdd99; /* Golden Yellow for contrast */
+  font-size: 1.5rem;
+  margin-right: auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+nav a {
+  color: #ffdd99; /* Golden Yellow for consistency */
+  text-decoration: none;
+  padding: 5px 10px;
+  margin: 0 5px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.9rem;
+  letter-spacing: 0.8px;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background: #ffc107; /* Bright yellow hover effect */
+  color: #6d071a; /* Matches the maroon theme */
+  border: 2px solid #ffc107;
+  transform: scale(1.05);
+}
+
+/* Button Styling */
+.hero-btn {
+  background: #f39c12; /* Bright orange button */
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 50px; /* Rounded button */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hero-btn:hover {
+  background: #d35400; /* Darker orange on hover */
+  transform: scale(1.1); /* Enlarges slightly on hover */
+  color: #fff;
+}
+
+/* Footer Section */
+footer {
+  background: linear-gradient(90deg, #6d071a, #8a0e25); /* Same deep maroon gradient as navbar */
+  color: #ffdd99; /* Golden Yellow for text */
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+}
+
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 10px; /* Adjust padding for a smaller footer */
+  background-color: #004d80; /* Solid dark blue footer */
+  color: white;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  font-size: 12px; /* Reduced font size */
+}
+
+
+/* Train Form Section */
+#train-section {
+  max-width: 600px;
+  margin: 100px auto 50px; /* Adjust margin to account for fixed header */
+  background-color: rgba(200, 12, 238, 0.5); /* Transparent background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Slightly darker shadow */
+}
+
+/* Form Styles */
+.train-form h2 {
+  text-align: center;
+  color: #003366; /* Matching the header color */
+  margin-bottom: 20px;
+}
+
+.train-form label {
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+}
+
+.train-form input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Button Styles */
+.train-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0099cc; /* Changed button color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.train-form button:hover {
+  background-color: #0077b3; /* Darker shade for hover */
+}
+
+
+
+
+
+

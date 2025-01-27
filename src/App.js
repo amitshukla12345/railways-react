@@ -2,10 +2,9 @@ import './App.css';
 import Navbar from './Components/RailwaysBookingSystem/Navbar';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Register from './Components/Register/Register';
-import Train from './Components/Train.jsx/Train';
-import TrainList from './Components/Train.jsx/TrainList';
-
-
+import AddTrain from './Components/AddTrain/AddTrain';
+import TrainList from './Components/Train/TrainList';
+import TrainAdmin from './Components/TrainAdmin/TrainAdmin';
 
 
 const routes = createBrowserRouter([
@@ -14,16 +13,17 @@ const routes = createBrowserRouter([
     element: <Navbar />,
   },
   {
-    path:"/register",
-    element:<Register/>
+    path: "/register",
+    element: <Register />,
   },
   {
-    path:"/train",
-    element:<TrainList/>
-  }
-
- 
-
+    path: "/train",
+    element: <TrainList />,
+  },
+  {
+    path: "/addtrain",
+    element: <TrainAdmin/>, 
+  },
 ]);
 
 function App() {
