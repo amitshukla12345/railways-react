@@ -1,39 +1,28 @@
 import React from 'react';
 import logo from '../../image/rail logo1.png'
+import { Link } from 'react-router-dom';
+
 
 const RailwayReservationSystem = () => {
     return (
+        
         <div>
             {/* Navigation Bar */}
             <nav>
                 <img src={logo} alt="Indian Railway Logo" className="logo" />
                 <h1>भारतीय रेल (Bharti Rail)</h1>
-                <a href="Index.html">Home</a>
-                <a href="user.html">User</a>
-                <a href="train.html">Trains</a>
+                <Link to="/">Home</Link>
+                <Link to="/register">User</Link>
+                <Link to="/railway-admin">Trains</Link>
                 <a href="booking.html">Book Tickets</a>
-                <a href="category.html">Category</a>
-                <a href="Passenger.html">Passengers</a>
+                <Link to="/category">Category</Link>
+                <Link to="/passenger">Passengers</Link>
                 <a href="Payment.html">Payment</a>
                 <a href="Notification.html">Notifications</a>
             </nav>
 
-            {/* Hero Section */}
-            <div className="hero">
-                <h1>Welcome to भारतीय रेल</h1>
-                <p>Book your train tickets with ease and travel across the country.</p>
-                <a href="Login.html">
-                    <button className="hero-btn">Login to Book Tickets</button>
-                </a>
-            </div>
 
-            {/* Footer */}
-            <footer>
-                <p>&copy; 2024 भारतीय रेल (Bharti Rail). All rights reserved.</p>
-                <div className="running-train">
-                    <span>🚂 भारतीय रेल: Connecting the Nation with Every Journey 🚂</span>
-                </div>
-            </footer>
+            
         </div>
     );
 };

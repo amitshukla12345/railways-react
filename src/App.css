@@ -1,42 +1,4 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 /* General Body and Navigation Styling */
 body {
   font-family: Arial, sans-serif;
@@ -45,18 +7,6 @@ body {
   padding: 0;
 }
 
-/* Navigation Bar Styling */
-nav {
-  background: linear-gradient(90deg, #1e3c72, #2a5298); /* Modern blue gradient */
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 8px 15px; /* Reduced padding for a smaller nav */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
-  position: sticky; /* Sticks to the top when scrolling */
-  top: 0;
-  z-index: 1000;
-}
 
 nav .logo {
   width: 40px; /* Compact logo size */
@@ -71,102 +21,12 @@ nav .logo:hover {
   transform: scale(1.1); /* Slight zoom on hover */
 }
 
-nav h1 {
-  color: #fff;
-  font-size: 1.5rem; /* Adjusted smaller font size */
-  margin-right: auto;
-  font-family: 'Poppins', sans-serif; /* Clean modern font */
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  padding: 5px 10px; /* Smaller link padding */
-  margin: 0 5px;
-  text-transform: uppercase;
-  font-weight: 500; /* Medium font weight */
-  font-size: 0.9rem; /* Reduced link font size */
-  letter-spacing: 0.8px; /* Adjusted spacing */
-  border: 2px solid transparent;
-  border-radius: 3px;
-  transition: all 0.3s ease;
-}
-
 nav a:hover {
   background: #f39c12; /* Bright orange hover effect */
   color: #000; /* Dark text on hover */
   border: 2px solid #f39c12; /* Highlighted border */
   transform: scale(1.05); /* Slight zoom effect */
 }
-
-
-
-.hero {
- /*background-image: url('./image/bhartiy.jpg'); /* Ensure the image path is correct */
-  background-size: cover;
-  background-position: center;
-  color: #fff; /* White text for better contrast */
-  text-align: center;
-  padding: 100px 20px;
-  position: relative;
-  overflow: hidden;
-  
-}
-
-/* Add a gradient overlay with transparency */
-.hero:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)); /* Gradient for transparent effect */
-  z-index: -1; /* Keeps the overlay behind the text */
-}
-
-/* Hero Heading Styling */
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Adds a slight shadow for better text visibility */
-}
-
-/* Hero Paragraph Styling */
-.hero p {
-  font-size: 1.3rem;
-  margin-bottom: 25px;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Matches h1 shadow */
-}
-
-/* Button Styling */
-.hero-btn {
-  background: #ff6f61; /* Soft red button for contrast */
-  color: #fff;
-  padding: 12px 25px;
-  border: none;
-  font-size: 1rem;
-  border-radius: 50px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  transition: all 0.3s ease;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.hero-btn:hover {
-  background: #e94e3a; /* Darker red on hover */
-  transform: scale(1.1); /* Enlarges slightly on hover */
-}
-
-  .hero p {
-      font-size: 1rem;
-  }
-
-  .hero-btn {
-      padding: 10px 20px;
-      font-size: 0.9rem;
-  }
 
 /* General Body and Navigation Styling */
 body {
@@ -188,22 +48,12 @@ nav {
   top: 0;
   z-index: 1000;
 }
-
-nav .logo {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin-right: 15px;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
 nav .logo:hover {
   transform: scale(1.1);
 }
 
 nav h1 {
-  color: #ffdd99; /* Golden Yellow for contrast */
+  color: #ffdd99; /* Golden Yellow for contrast  name bharti rail*/
   font-size: 1.5rem;
   margin-right: auto;
   font-family: 'Poppins', sans-serif;
@@ -222,14 +72,64 @@ nav a {
   border-radius: 3px;
   transition: all 0.3s ease;
 }
+/*===================================*/
+/* Footer Section */
+footer {
+  background: linear-gradient(90deg, #6d071a, #8a0e25); /* Same deep maroon gradient as navbar */
+  color: #ffdd99; /* Golden Yellow for text */
+  text-align: center;
+  padding: 5px 0;
+  font-size: 0.9rem;
+}
+/*================  rail pragraph===================*/
 
-nav a:hover {
-  background: #ffc107; /* Bright yellow hover effect */
-  color: #6d071a; /* Matches the maroon theme */
-  border: 2px solid #ffc107;
-  transform: scale(1.05);
+/* Hero Paragraph Styling */
+
+.hero {
+  background-image: url('./image/bhartiy.jpg'); /* Ensure the image path is correct */
+  background-size: cover;
+  background-position: center;
+  color: #fff; /* White text for better contrast */
+  text-align: center;
+  padding: 166px 20px;
+  position: relative;
+  overflow: hidden;
+  
 }
 
+.hero p {
+  font-size: 1rem;
+}
+
+
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Matches h1 shadow */
+}
+/* Button Styling */
+.hero-btn {
+  background: #ff6f61; /* Soft red button for contrast */
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hero-btn:hover {
+  background: #e94e3a; /* Darker red on hover */
+  transform: scale(1.1); /* Enlarges slightly on hover */
+}
+.hero-btn {
+  padding: 10px 20px;
+  font-size: 0.9rem;
+}
 /* Button Styling */
 .hero-btn {
   background: #f39c12; /* Bright orange button */
@@ -251,162 +151,7 @@ nav a:hover {
   color: #fff;
 }
 
-/* Footer Section */
-footer {
-  background: linear-gradient(90deg, #6d071a, #8a0e25); /* Same deep maroon gradient as navbar */
-  color: #ffdd99; /* Golden Yellow for text */
-  text-align: center;
-  padding: 15px 0;
-  font-size: 0.9rem;
-}
-
-/* register */
-
-.rg{
-  flex: 1 1 100%;
-}
-
-.registerform{
-  display: flex; flex-wrap: wrap; gap: 15px;
-}
-
-/* css of register page*/
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f9;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-}
-.form-container {
-  background: #088fe9;
-  padding: 10px;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 600px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 15px;
-}
-.form-container h2 {
-  text-align: center;
-  width: 100%;
-  margin-bottom: 10px;
-}
-.form-group {
-  flex: 1 1 calc(50% - 20px);
-  margin-bottom: 10px;
-}
-.form-group label {
-  display: block;
-  margin-bottom: 5px;
-}
-.form-group input, .form-group select {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
-.form-group input:focus, .form-group select:focus {
-  border-color: #007bff;
-  outline: none;
-}
-.form-group button {
-  width: 100%;
-  padding: 10px;
-  background-color: #15ff00;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-}
-.form-group button:hover {
-  background-color: #b300a4;
-}
-
-/* train table Table css*/
-
-/* General styling for the table */
-.table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 20px 0;
-  font-size: 16px;
-  font-family: Arial, sans-serif;
-  text-align: left;
-  border: 2px solid #330bc4; /* Border for the whole table */
-}
-
-/* Table header styling */
-.table th {
-  background-color: #edfc19;
-  color: rgb(189, 28, 7);
-  padding: 10px;
-  text-transform: uppercase;
-  border: 2px solid #330bc4; /* Border around each header cell */
-}
-
-/* Table rows */
-.table td {
-  padding: 10px;
-  border-bottom: 2px solid #330bc4; /* Border between rows */
-  border-right: 2px solid #330bc4; /* Border between columns */
-}
-
-/* Remove the right border for the last column */
-.table td:last-child {
-  border-right: none;
-}
-
-/* Alternating row colors for better readability */
-.table tbody tr:nth-child(even) {
-  background-color: #f9f9f9;
-}
-
-.table tbody tr:nth-child(odd) {
-  background-color: #ffffff;
-}
-
-/* Hover effect on rows */
-.table tbody tr:hover {
-  background-color: #f1f1f1;
-}
-
-/* Additional styling for table row (added .p-3 class) */
-.p-3 {
-  padding: 15px; /* Adds extra padding to the row */
-}
-
-/* Center-align the "No trains available" message */
-.table td[colspan] {
-  text-align: center;
-  font-style: italic;
-  color: #555;
-  padding: 20px;
-}
-
-/* Responsive table */
-@media screen and (max-width: 768px) {
-  .table {
-    font-size: 14px;
-  }
-  .table th,
-  .table td {
-    padding: 8px;
-  }
-}
-
-
-/*search css*/
-
-/*Train css*/
+/*=======================(RailwayItemAdmin css)========================*/
 /* General Styles */
 body {
     
@@ -415,105 +160,6 @@ body {
   padding: 0;
   background: linear-gradient(135deg, #2fbdff,#ff7582); /* Gradient from purple to orange */
 }
-
-
-/* Navigation Bar Styling */
-nav {
-  background: linear-gradient(90deg, #6d071a, #8a0e25); /* Deep maroon gradient */
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 8px 15px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-nav .logo {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin-right: 15px;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-nav .logo:hover {
-  transform: scale(1.1);
-}
-
-nav h1 {
-  color: #ffdd99; /* Golden Yellow for contrast */
-  font-size: 1.5rem;
-  margin-right: auto;
-  font-family: 'Poppins', sans-serif;
-}
-
-nav a {
-  color: #ffdd99; /* Golden Yellow for consistency */
-  text-decoration: none;
-  padding: 5px 10px;
-  margin: 0 5px;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 0.9rem;
-  letter-spacing: 0.8px;
-  border: 2px solid transparent;
-  border-radius: 3px;
-  transition: all 0.3s ease;
-}
-
-nav a:hover {
-  background: #ffc107; /* Bright yellow hover effect */
-  color: #6d071a; /* Matches the maroon theme */
-  border: 2px solid #ffc107;
-  transform: scale(1.05);
-}
-
-/* Button Styling */
-.hero-btn {
-  background: #f39c12; /* Bright orange button */
-  color: white;
-  padding: 12px 25px;
-  border: none;
-  font-size: 1rem;
-  border-radius: 50px; /* Rounded button */
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  transition: all 0.3s ease;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.hero-btn:hover {
-  background: #d35400; /* Darker orange on hover */
-  transform: scale(1.1); /* Enlarges slightly on hover */
-  color: #fff;
-}
-
-/* Footer Section */
-footer {
-  background: linear-gradient(90deg, #6d071a, #8a0e25); /* Same deep maroon gradient as navbar */
-  color: #ffdd99; /* Golden Yellow for text */
-  text-align: center;
-  padding: 15px 0;
-  font-size: 0.9rem;
-}
-
-
-/* Footer Styles */
-footer {
-  text-align: center;
-  padding: 10px; /* Adjust padding for a smaller footer */
-  background-color: #004d80; /* Solid dark blue footer */
-  color: white;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-  font-size: 12px; /* Reduced font size */
-}
-
 
 /* Train Form Section */
 #train-section {
@@ -562,6 +208,223 @@ footer {
 }
 
 .train-form button:hover {
+  background-color: #0077b3; /* Darker shade for hover */
+}
+
+/*================================(Register)=================================*/
+/* General Styles */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #4f08c2, #e96806); /* Gradient from purple to orange */
+}
+
+
+/* Header Styles */
+
+
+
+/* User Form Section */
+#user-section {
+  max-width: 600px;
+  margin: 100px auto 50px; /* Adjust margin to account for fixed header */
+  background-color: rgba(255, 255, 255, 0.3); /* More transparency for the background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Slightly darker shadow for better visibility */
+}
+
+/* Form Styles */
+.user-form h2 {
+  text-align: center;
+  color: #003366; /* Matching the header color */
+  margin-bottom: 20px;
+}
+
+.user-form label {
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+}
+
+.user-form input,
+.user-form select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Button Styles */
+.user-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0099cc; /* Changed button color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.user-form button:hover {
+  background-color: #0077b3; /* Darker shade for hover */
+}
+/* User Form Section */
+#user-section {
+  max-width: 600px;
+  margin: 100px auto 50px; /* Adjust margin to account for fixed header */
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.85), rgba(240, 240, 240, 0.7)); /* Subtle gradient for the form background */
+  padding: 20px;
+  border-radius: 12px; /* Slightly more rounded corners for a modern look */
+  border: 3px solid; /* Adding a border */
+  border-image: linear-gradient(135deg, #4f08c2, #e96806) 1; /* Gradient border matching the page background */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25); /* Darker shadow for better visibility */
+}
+
+/* Form Styles */
+.user-form h2 {
+  text-align: center;
+  color: #4f08c2; /* Matching the start color of the gradient */
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); /* Enhancing text shadow for depth */
+}
+
+.user-form label {
+  font-weight: bold;
+  color: #4f08c2; /* Adding color consistency to labels */
+  margin-top: 10px;
+  display: block;
+}
+/*==============================passenger===========================*/
+/* General Styles */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(#fff94c,#004ff9);
+}
+
+/* Passenger Form Section */ 
+#passenger-section {
+  max-width: 350px; /* Narrower form */
+  margin: 100px auto 50px; /* Adjust margin for fixed header */
+  background-color: rgba(202, 18, 18, 0.7); /* Transparent background */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  height: auto;
+}
+
+/* Form Styles */
+.passenger-form h2 {
+  text-align: center;
+  color: #003366; /* Matching header color */
+  margin-bottom: 20px;
+}
+
+.passenger-form label {
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+}
+
+.passenger-form input,
+.passenger-form select,
+.passenger-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Button Styles */
+.passenger-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0099cc; /* Button color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.passenger-form button:hover {
+  background-color: #0077b3; /* Darker shade for hover */
+}
+
+
+/*=======================================================*/
+
+/* General Styles */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(#ee8803, #760cda, #06e9e9);
+}
+
+/* Category Form Section */
+#category-section {
+  max-width: 300px; /* More reduced width */
+  margin: 100px auto 50px; /* Adjust margin to account for fixed header */
+  background-color: rgba(255, 255, 255, 0.3); /* More transparent background */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Slightly darker shadow */
+  height: 450px; /* Increased height */
+}
+
+/* Form Styles */
+.category-form h2 {
+  text-align: center;
+  color: #003366; /* Matching the header color */
+  margin-bottom: 20px;
+}
+
+.category-form label {
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+}
+
+.category-form select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Button Styles */
+.category-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0099cc; /* Changed button color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.category-form button:hover {
   background-color: #0077b3; /* Darker shade for hover */
 }
 

@@ -11,6 +11,7 @@ function Train({trainName,destination,source,departure,arrival}) {
   <td>{source}</td>
   <td>{departure}</td>
   <td>{arrival}</td>
+
 </tr>
 
 

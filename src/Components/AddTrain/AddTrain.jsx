@@ -45,6 +45,7 @@ function AddTrain() {
         <form className="train-form" onSubmit={handleSubmit}>
           <h2>Add Train Details</h2>
 
+
           {/* Train Name */}
           <label htmlFor="trainName">Train Name:</label>
           <input

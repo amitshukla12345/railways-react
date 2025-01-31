@@ -69,32 +69,34 @@ function TrainList() {
         placeholder="Search by Train Name"
         value={searchQuery}
         onChange={handleSearch}
-        style={{ padding: "8px", marginBottom: "10px", width: "200px" }}
+        style={{ padding: "4px", marginBottom: "10px", width: "200px" }}
       />
       <input
         type="text"
         placeholder="Search by Destination"
         value={destination}
         onChange={handleDestination}
-        style={{ padding: "8px", marginLeft: "10px", marginBottom: "10px", width: "200px" }}
+        style={{ padding: "4px", marginLeft: "10px", marginBottom: "10px", width: "200px" }}
       />
       <input
         type="date"
         value={date}
         onChange={handleDate}
-        style={{ padding: "8px", marginLeft: "10px", marginBottom: "10px" }}
+        style={{ padding: "4px", marginLeft: "10px", marginBottom: "10px" }}
       />
       <input
         type="text"
         placeholder="Search by Source"
         value={source}
         onChange={handleSource}
-        style={{ padding: "8px", marginLeft: "10px", marginBottom: "10px", width: "200px" }}
+        style={{ padding: "4px", marginLeft: "10px", marginBottom: "10px", width: "200px" }}
       />
-      <button onClick={handleSort} style={{ padding: "8px", marginLeft: "10px" }}>
+      <button onClick={handleSort} style={{ padding: "4px", marginLeft: "10px" }}>
         Sort {sortOrder === "asc" ? "A to Z" : "Z to A"}
       </button>
 
+
+      <h1>Total Trains{trains.length}</h1>
       {/* Train Table */}
       <table className="table" style={{ marginTop: "20px", width: "100%" }}>
         <thead>
@@ -108,7 +110,7 @@ function TrainList() {
         </thead>
         <tbody>
           {sortedTrains.length > 0 ? (
-            sortedTrains.map((train, index) => (
+            trains.map((train, index) => (
               <Train
                 key={index}
                 trainName={train.trainName}
