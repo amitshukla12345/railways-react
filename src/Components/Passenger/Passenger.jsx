@@ -32,7 +32,8 @@ function Passenger() {
         email: '',
         address: '',
         age: '',
-      }); // Reset form data
+      }); // Res
+      // et form data
     } catch (error) {
       setError('Failed to submit information. Please try again.');
       console.error('Submission error:', error);

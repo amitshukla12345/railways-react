@@ -14,6 +14,9 @@ import RailwayItemAdmin from './Components/RailwayAdmin/RailwayItemAdmin';
 import RailwayListAdmin from './Components/RailwayAdmin/RailwayListAdmin';
 import RailwayFormAdmin from './Components/RailwayAdmin/RailwayFormAdmin';
 import User from './Components/User/User';
+import { getTrain } from './Components/Train/TrainService';
+import GetTrain from './Components/GetTrain/GetTrain';
+import Booking from './Components/Booking/Booking';
 
 
 
@@ -76,7 +79,17 @@ const routes = createBrowserRouter([
       {
         path:"/user",
         element:<User/>
+      },
+      {
+        path:"/gettrain",
+        element:<GetTrain/>
+      },
+
+      {
+        path:"/booking",
+        element:<Booking/>
       }
+
      
       
     ],

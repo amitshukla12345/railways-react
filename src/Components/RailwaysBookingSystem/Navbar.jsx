@@ -10,11 +10,11 @@ const RailwayReservationSystem = () => {
             {/* Navigation Bar */}
             <nav>
                 <img src={logo} alt="Indian Railway Logo" className="logo" />
-                <h1>भारतीय रेल (Bharti Rail)</h1>
+                <h1>भारतीय रेल (Indian Railways)</h1>
                 <Link to="/">Home</Link>
                 <Link to="/register">User</Link>
                 <Link to="/railway-admin">Trains</Link>
-                <a href="booking.html">Book Tickets</a>
+                <Link to="/gettrain">Book Tickets</Link>
                 <Link to="/category">Category</Link>
                 <Link to="/passenger">Passengers</Link>
                 <a href="Payment.html">Payment</a>

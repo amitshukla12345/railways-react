@@ -428,6 +428,92 @@ body {
   background-color: #0077b3; /* Darker shade for hover */
 }
 
+/*===========================booking cs =======================================*/
+
+/* General Styles */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(#ffa17f,#00223e);
+}
+
+/* Booking Section */
+#booking-section {
+  max-width: 600px;
+  margin: 50px auto; /* Adjusted for the fixed header */
+  background-color: rgba(170, 231, 4, 0.4); /* More transparent background for the form */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Slightly darker shadow for better visibility */
+}
+
+/* Form Styles */
+.booking-form h2 {
+  text-align: center;
+  color: #006bb3; /* Matching the header color */
+  margin-bottom: 20px;
+}
+
+.booking-form label {
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+}
+
+.booking-form input,
+.booking-form select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.booking-form button {
+  width: 100%; /* Full width button */
+  padding: 10px; /* Adds space inside the button */
+  background-color: #0c1bf1; /* Red background color */
+  color: #fff; /* White text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size of 16px */
+  cursor: pointer; /* Cursor changes to a pointer on hover */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for background and shadow */
+}
+
+/* Hover effect */
+.booking-form button:hover {
+  background-color: #c0392b; /* Darker red background on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow effect on hover */
+}
+
+/* Focus effect */
+.booking-form button:focus {
+  outline: none; /* Remove default outline */
+  border: 2px solid #f1c40f; /* Yellow border on focus */
+  box-shadow: 0 0 8px rgba(241, 196, 15, 0.5); /* Yellow glow effect on focus */
+}
+
+
+.booking-form button:hover {
+  background-color: #e90a0a; /* Darker shade of blue for hover */
+}
+
+/* Confirmation Message */
+#booking-confirmation {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(58, 8, 240);
+  margin-top: 15px;
+}
+
+
+
 
 
 
