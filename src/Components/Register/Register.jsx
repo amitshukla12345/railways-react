@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { addUser, getUsers } from './RegisterService';
+import { Link } from 'react-router-dom';
 
 function Register() {
     const [user, setUser] = useState(null);
@@ -71,7 +72,14 @@ function Register() {
                             <div className="form-group rg">
                                 <button type="submit">Register</button>
                             </div>
+                            <p>
+        If you already have an account?{" "}
+        <Link to="/Login">
+          Login here
+        </Link>
+      </p>
                         </form>
+                       
                     </div>
                 </div>
             </div>

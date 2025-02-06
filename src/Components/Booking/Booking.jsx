@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { addBooking } from "../Booking/BookingService"; // Ensure the correct path
 import { addPassenger } from "../Passenger/PassengerService";
+import { allocatePassenger, allocateSeat } from "../BookingDetails/BookingDetailsService";
 
 function Booking({ train }) {
   const [formData, setFormData] = useState({
@@ -33,10 +34,20 @@ function Booking({ train }) {
 
     try {
       console.log(formData)
-      const booking=await addBooking(formData); // Assuming this method handles booking and saving passenger details
+      const booking=await addBooking(formData);
+      console.log(train._links.self.href,booking._links.train.href)
+      const status=await allocateSeat(train._links.self.href,booking._links.train.href)
+
+      
+      // Assuming this method handles booking and saving passenger details
       setConfirmationMessage("Thank you! Your ticket has been booked.");
-      const passanger=addPassenger(formData)
+      const passanger=await addPassenger(formData)
+      console.log("Passenger",passanger)
+      console.log("Booking",booking)
       setConfirmationMessage("Thank you! Passanger created sccessfully");
+      console.log(passanger._links.self.href+"/booking",booking._links.self.href)
+      allocatePassenger(passanger._links.self.href+"/booking",booking._links.self.href)
+  
 
       setFormData({
         userName: "",

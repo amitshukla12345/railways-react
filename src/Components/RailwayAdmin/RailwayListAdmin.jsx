@@ -29,7 +29,7 @@ function RailwayListAdmin() {
   // Handle input changes
   const handleSearch = (e) => setSearchQuery(e.target.value);
   const handleDestination = (e) => setDestination(e.target.value);
-  const handleDate = (e) => setDate(e.target.value);
+  
   const handleSource = (e) => setSource(e.target.value);
 
   // Toggle sort order
@@ -72,12 +72,7 @@ function RailwayListAdmin() {
           onChange={handleDestination}
           style={{ padding: "5px", marginRight: "10px", width: "200px" }}
         />
-        <input
-          type="date"
-          value={date}
-          onChange={handleDate}
-          style={{ padding: "5px", marginRight: "10px" }}
-        />
+        
         <input
           type="text"
           placeholder="Search by Source"

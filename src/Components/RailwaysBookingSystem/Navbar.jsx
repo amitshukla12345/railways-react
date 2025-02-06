@@ -12,11 +12,11 @@ const RailwayReservationSystem = () => {
                 <img src={logo} alt="Indian Railway Logo" className="logo" />
                 <h1>भारतीय रेल (Indian Railways)</h1>
                 <Link to="/">Home</Link>
-                <Link to="/register">User</Link>
+                <Link to="/register">Register</Link>
                 <Link to="/railway-admin">Trains</Link>
                 <Link to="/gettrain">Book Tickets</Link>
-                <Link to="/category">Category</Link>
-                <Link to="/passenger">Passengers</Link>
+                <Link to="/bookingDetails">bookingDetails</Link>
+                <Link to="/user">user</Link>
                 <a href="Payment.html">Payment</a>
                 <a href="Notification.html">Notifications</a>
             </nav>

@@ -17,6 +17,7 @@ import User from './Components/User/User';
 import { getTrain } from './Components/Train/TrainService';
 import GetTrain from './Components/GetTrain/GetTrain';
 import Booking from './Components/Booking/Booking';
+import BookingDetails from './Components/BookingDetails/BookingDetails';
 
 
 
@@ -88,7 +89,11 @@ const routes = createBrowserRouter([
       {
         path:"/booking",
         element:<Booking/>
+      },
+      { path:"/bookingDetails",
+        element:<BookingDetails/>
       }
+     
 
      
       
